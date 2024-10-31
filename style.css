@@ -32,6 +32,8 @@ body {
     "header header"
     "banner banner"
     "content content"
+    "content1 content1"
+    "content2 content2"
     "footer footer";
 }
 
@@ -47,17 +49,25 @@ main {
     grid-area: content;
 }
 
+#issue__content {
+    grid-area: content1;
+}
+
+.multi-media {
+    grid-area: content2;
+}
+
 footer {
     grid-area: footer;
 }
-footer {
-    border: 1px solid #00FF66;
-    padding: 10px;
-}
-
 /* Banner-outer */
 
 .banner-outer {
     grid-area: banner;
     margin: 30px 0;
+}
+
+a {
+    text-decoration: none !important;
+    cursor: pointer;
 }
