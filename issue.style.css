@@ -7,6 +7,10 @@
     --text-gray: #EFEFEF;
 }
 
+#issue__content {
+    position: relative;
+}
+
 .main__issue {
     padding: 20px 0;
     border-top: 2px solid var(--text-gray);
@@ -54,6 +58,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 16px;
+    position: relative;
 }
 
 .main__issue-list > article {
@@ -79,4 +84,27 @@
 }
 .main__issue-list > article > a:hover {
     color: var(--text-red);
+}
+.btn {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: var(--text-white);
+    cursor: pointer;
+}
+
+.btn-left, .btn-right {
+    position: absolute;
+    top: 40%;
+    z-index: 2;
+}
+
+.btn-left {
+    left: 6%;
+}
+
+.btn-right {
+    right: 7%;
 }

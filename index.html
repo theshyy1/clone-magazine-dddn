@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="./main.style.css" />
     <link rel="stylesheet" href="./issue.style.css" />
     <link rel="stylesheet" href="./multi-media.style.css" />
+    <link rel="stylesheet" href="./social.style.css" />
     <link rel="stylesheet" href="./footer.style.css" />
   </head>
   <body>
@@ -80,8 +81,8 @@
         <nav class="container-n">
           <div class="container">
             <ul class="header__nav-menu">
-              <li>
-                <a title="Home" href="#"
+              <li data-active="true">
+                <a title="Home"  href="#"
                   ><span><i class="fa-solid fa-house"></i></span
                 ></a>
               </li>
@@ -99,14 +100,16 @@
               <li><a href="">công nghệ </a></li>
             </ul>
           </div>
-        </nav>
+        </nav>  
       </header>
       <!-- End- Header -->
 
       <!-- Banner -->
       <section class="banner-outer">
         <div class="container">
-          <img src="https://picsum.photos/1280/208" alt="Banner" />
+          <div class="banner-inner">
+            <img src="https://picsum.photos/1280/208" alt="Banner" />
+          </div>
         </div>
       </section>
       <!-- End-- Banner -->
@@ -150,6 +153,11 @@
                   </li>
                 </ol>
               </div>
+              <div class="main__wrapper-btns">
+                <button><i class="fa-solid fa-chevron-left"></i></button>
+                <button><i class="fa-solid fa-chevron-right"></i></button>
+              </div>
+              <span>1/3</span>
             </article>
             <article>
               <!-- Tâm điểm 1 -->
@@ -350,6 +358,8 @@
       <!-- Issue -->
       <div id="issue__content" class="">
         <div class="container">
+          <button class="btn btn-left"><i class="fa-solid fa-angles-left"></i></button>
+          <button class="btn btn-right"><i class="fa-solid fa-angles-right"></i></button>
           <div class="main__issue">
             <div class="main__issue-head">
               <span>vấn đề nổi bật</span>
@@ -366,7 +376,6 @@
                 </a>
                 <a href="#">BÁO CÁO PCI và PGI 2023</a>
               </article>
-              <!-- End item -->
               <!-- Issue-item -->
               <article>
                 <a class="main__issue-img">
@@ -376,7 +385,6 @@
                   >DIỄN ĐÀN DOANH NGHIỆP THƯỜNG NIÊN 2024 (VBF 2024)</a
                 >
               </article>
-              <!-- End item -->
               <!-- Issue-item -->
               <article>
                 <div class="main__issue-img">
@@ -386,7 +394,6 @@
                   >Thu hút doanh nghiệp đầu tư cho nông nghiệp bền vững</a
                 >
               </article>
-              <!-- End item -->
               <!-- Issue-item -->
               <article>
                 <div class="main__issue-img">
@@ -396,7 +403,6 @@
                   >Phát triển hệ sinh thái đổi mới sáng tạo Quảng Nam 2023</a
                 >
               </article>
-              <!-- End item -->
               <!-- Issue-item -->
               <article>
                 <div class="main__issue-img">
@@ -406,8 +412,8 @@
                   Liên kết phát triển khu công nghiệp trục cao tốc phía đông
                 </a>
               </article>
-              <!-- End item -->
             </section>
+          
           </div>
         </div>
       </div>
@@ -533,7 +539,132 @@
         </div>
       </div>
 
-      <!-- End-- Main Content -->
+      <section class="p-social">
+        <div class="container">
+          <div class="p-social-container">
+            <article class="p-social-head">
+              <header class="p-social__topic">
+                <a href="">
+                  <h3>chính trị - xã hội</h3>
+                </a>
+                <ul>
+                  <li><a href="">chính trị</a></li>
+                  <li><a href="">kinh tế</a></li>
+                  <li><a href="">xã hội</a></li>
+                </ul>
+              </header>
+              <section class="p-social__content">
+                  <article class="">
+                    <a href="#" class="p-social__img">
+                      <img
+                        src="https://picsum.photos/625/416"
+                        alt="Multi-media Img"
+                      />
+                    </a>
+                    <h2 class="p-social__title">
+                      <a href="">Việt Nam - Qata sẽ sớm nâng quan hệ song phương lên tầm cao mới</a>
+                    </h2>
+                    <p>
+                      <a href=""
+                        >Tại buổi hội đàm ngày 31/10, hai Thủ tướng Việt Nam – Qata đã nhất trí sớm nâng quan hệ song phương lên tầm cao mới.</a
+                      >
+                    </p>
+                  </article>
+                  <article class="">
+                     <!-- Social item -->
+                    <div class="p-social__item">
+                      <a href="#" class="p-social__img">
+                        <img
+                          src="https://picsum.photos/297/198"
+                          alt="Multi-media Img"
+                        />
+                      </a>
+                      <h2 class="p-social__item-title">
+                        <a href=""
+                          >TPHCM tiếp tục hỗ trợ doanh nghiệp tháo gỡ khó khăn</a
+                        >
+                      </h2>
+                    </div>
+
+                    <div class="p-social__item">
+                      <a href="#" class="p-social__img">
+                        <img
+                          src="https://picsum.photos/297/198"
+                          alt="Multi-media Img"
+                        />
+                      </a>
+                      <h2 class="p-social__item-title">
+                        <a href=""
+                          >TPHCM tiếp tục hỗ trợ doanh nghiệp tháo gỡ khó khăn</a
+                        >
+                      </h2>
+                    </div>
+                  </article>
+              </section>
+            </article>
+            <article class="p-social__sidebar">
+              <div class="sidebar__title">
+                <h2>Đọc nhiều</h2>
+              </div>
+              <div class="sidebar__options">
+                <ul>
+                  <li>
+                    <div class="sidebar__options-number">
+                      <span>1</span>
+                    </div>
+                    <div class="sidebar__options-title">
+                      <a href="">
+                        <h3>BRICS hướng tới một thế giới đa cực mới</h3>
+                      </a>
+                    </div>
+                  </li>
+                 
+                  <li>
+                    <div class="sidebar__options-number">
+                      <span>2</span>
+                    </div>
+                    <div class="sidebar__options-title">
+                      <a href="">
+                        <h3>Sửa Luật Bảo hiểm y tế: Cần có chính sách về đổi mới công tác tài chính và đầu tư</h3>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sidebar__options-number">
+                      <span>3</span>
+                    </div>
+                    <div class="sidebar__options-title">
+                      <a href="">
+                        <h3>Giải pháp gia tăng doanh thu trong ứng dụng tại Việt Nam</h3>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sidebar__options-number">
+                      <span>4</span>
+                    </div>
+                    <div class="sidebar__options-title">
+                      <a href="">
+                        <h3>Tăng cường kết nối để trở thành điểm đến du lịch hấp dẫn</h3>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sidebar__options-number">
+                      <span>5</span>
+                    </div>
+                    <div class="sidebar__options-title">
+                      <a href="">
+                        <h3>Đồ hộp Hạ Long kéo lợi nhuận sau bão Yagi</h3>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
       <!-- Footer -->
       <footer>

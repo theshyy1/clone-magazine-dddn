@@ -7,9 +7,11 @@
     --text-gray: #EFEFEF;
 }
 
-header {
+.header {
     border-bottom: 2px solid var(--text-red);
     padding-bottom: 4px;
+    height: 168px;
+    font-family: "Roboto",Arial,"Helvetica Neue",Helvetica,sans-serif;
 }
 
 .container-h {
@@ -17,6 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 1380px;
+    height: 120px;
     max-width: 100%;
 }
 
@@ -55,12 +58,14 @@ header {
 }
 .container-n {
     width: inherit;
+    height: 48px;
     border-top: 1px solid var(--text-gray)
 }
 
 .header-logo > a > img {
     max-width: 100%;
     width: 233px;
+    height: 100px;
 }
 
 section > ul {
@@ -142,14 +147,26 @@ section > ul > li > a:first-child:hover {
     font-size: 13px;
     margin: 0 2px;
     color: var(--text-black);
-    font-weight: bold;
+    font-weight: 700;
 }
 .header__nav-menu > li > a:hover {
     color: var(--text-red);
 }
-.header__nav-menu > li:first-child > a > span{
+
+.header__nav-menu > li:first-child > a{
+    position: relative;
     font-size: 20px;
-    border-top: 2px solid var(--text-red);
-    padding: 12px 2px 0;
+    padding: 12px 4px 0;
     color: var(--text-black);
+}
+
+.header__nav-menu > li > a::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 1px;
+    background-color: var(--text-red);
 }
