@@ -1,0 +1,222 @@
+:root {
+    --text-black: #000;
+    --text-white: #fff;
+    --text-red: #ec1c24;
+    --text-green: #00FF66;
+    --text-grey: #7D8184;
+    --text-gray: #EFEFEF;
+}
+
+.container {
+    width: 1280px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.main-content {
+    width: 100%;
+    background-color: #27303e;
+}
+
+.l-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 16px;
+    padding: 60px 0;
+    font-family: "Merriweather",serif;
+}
+
+.l-main article{
+    flex: 1;
+}
+
+.l-main > article:first-child {
+    flex: 2.5;
+}
+
+.one__video iframe{
+    width: 950px;
+    height: 534px;
+    border: 1px solid var(--text-grey);
+}
+
+.video-sidebar-wrap > h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: var(--text-white);
+}
+
+.v-sidebar {
+    list-style: none;
+}
+.v-sidebar li {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.v-sidebar li > img {
+    width: 100px;
+    margin-right: 6px;
+    background-color: var(--text-white);
+}
+.v-sidebar-context > p {
+    color: #007bff;
+    font-size: 12px;
+}
+
+.v-sidebar-context > a {
+    display: block;
+    color: var(--text-white);
+    font-style: 14px;
+    padding-top: 4px;
+}
+
+/* C-video-detail */
+.c-video-detail__cat {
+    color: #17a2b8;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 14px 0;
+}
+
+.c-video-detail__title h1 {
+    font-size: 24px;
+    color: var(--text-white);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.c-video-detail__time {
+    font-size: 14px;
+    color: #939598;
+    text-align: left;
+    margin-bottom: 14px;
+}
+
+.c-video-detail__desc {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.66);
+}
+
+/* C-video-form  */
+.c-video-form {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 30px;
+    padding-top: 20px;
+}
+.c-video-form textarea {
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    padding: 4px 10px;
+    outline: none;
+}
+.c-video-form textarea::placeholder {
+    color: var(--text-grey);
+    border: none;
+    outline: none;
+}
+.c-video-form button {
+    padding: 10px 32px;
+    font-size: 14px;
+    color: var(--text-white);
+    background-color: var(--text-red);
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+.c-video-form button:hover {
+    background-color: #007bff;
+}
+
+/* C-comments */
+.c-video-comments {
+    color: var(--text-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    padding: 15px 0;
+}
+.c-comments-sort {
+    display: flex;
+}
+.c-comments-sort label {
+    color: var(--text-grey);
+    margin-right: 20px;
+}
+.c-sort-types {
+    display: flex;
+    list-style: none;
+}
+
+
+/* C-news-readmore */
+.c-news-readmore {
+    background-color: #242c39;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+.c-news-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.c-box {
+    background-color: #212832;
+    padding-bottom: 20px;
+}
+.c-box-img {
+    display: block;
+    align-items: center;
+}
+.c-box-img img {
+    width: auto;
+    height: auto;
+
+}
+.c-box-img img{
+    object-fit: contain;
+    width: 100%;
+    align-items: center;
+}
+
+.c-content {
+    padding: 16px 0 30px 12px;
+}
+.c-box-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-white);
+    padding-bottom: 10px;
+}
+.c-box-desc {
+    color: var(--text-grey);
+    font-size: 15px;
+}
+
+.c-news-readmore-btn {
+    text-align: center;
+    margin: 30px 0 25px 0;
+}
+.c-news-readmore-btn button{
+    background-color: transparent;
+    border-radius: 4px;
+    color: var(--text-white);
+    padding: 12px 24px;
+    border: 1px solid var(--text-white);
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.c-news-readmore-btn button:hover {
+    background-color: var(--text-red);
+    border: 1px solid var(--text-red);
+}

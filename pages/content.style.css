@@ -32,8 +32,8 @@
 }
 .m-detail-sidebar-l {
     margin-right: 175px;
-   
-}
+    width: 100%;
+}   
 
 .m-detail-full-content {
     padding-left: 20px;
@@ -113,8 +113,8 @@
 .sticky {
     position: fixed;
     top: 0;
-    width: 300px;
     margin-top: 30px;
+    width: 264px;
 }
    
 .m-detail-sidebar {
@@ -148,7 +148,6 @@
 .m-detail-sidebar > ul {
     list-style: none;
 }
-
 
 .m-sidebar-item {
     padding: 24px 0;
